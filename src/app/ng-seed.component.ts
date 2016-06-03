@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['ng-seed.component.css']
 })
 export class NGSeedAppComponent {
-  title = 'ng-seed works!';
+  title = 'Data Binding Works!';
+
+  onTest() {
+    return 1 === 1;
+  }
+  school = "Mullen";
 }
