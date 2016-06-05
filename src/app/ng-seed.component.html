@@ -12,7 +12,13 @@
   <br>
   Here we're binding to value, a property of the HTML input element
   <br>
-  <input type="text" [value]="school" [ngClass] = "{red: true}">
+  <input type="text" [value]="school" [ngClass] = "{red: true}" (keyup) ="onKeyup(inputElement.value)" #inputElement>
   <br>
+  <p>{{values}}</p>
   [ngClass] binds to an Angular directive
+  <br>
+  (keyup) binds changes to the UI to the DOM
+  <br>
+  This [(ngModel)] is used for two-way data binding
+  <input type="text" [(ngModel)] = "school">
 </h1>

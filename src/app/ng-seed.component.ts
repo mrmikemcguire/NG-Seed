@@ -8,9 +8,14 @@ import { Component } from '@angular/core';
 })
 export class NGSeedAppComponent {
   title = 'These three lines use string interpolation';
-
+  school = "Mullen";
+  values = '';
+  
   onTest() {
     return 1 === 1;
   }
-  school = "Mullen";
+  onKeyup(value : string) {
+    this.values += value + ' | ';
+  }
+
 }
