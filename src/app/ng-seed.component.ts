@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['ng-seed.component.css']
 })
 export class NGSeedAppComponent {
-  title = 'Data Binding Works!';
+  title = 'These three lines use string interpolation';
 
   onTest() {
     return 1 === 1;
